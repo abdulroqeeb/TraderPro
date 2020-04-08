@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="stripes">
+    <file>bg/stripes-light.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>logo.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>compute.png</file>
+    <file>order.png</file>
+    <file>stop.png</file>
+    <file>disconnect.png</file>
+    <file>connect.png</file>
+  </qresource>
+</RCC>
