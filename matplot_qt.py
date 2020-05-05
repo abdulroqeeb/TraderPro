@@ -18,6 +18,8 @@ import time
 import threading
 import datetime
 from tproconfig import port_chart_lim
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
 
 # Make sure that we are using QT5
 matplotlib.use('Qt5Agg')
@@ -45,7 +47,7 @@ class MyMplCanvas(FigureCanvas):
         #fig.tight_layout()
         self.axes = fig.add_subplot(111)
         self.axes.set_facecolor('#D6D6D6')
-        
+        self.axes_2 = self.axes.twinx()
         self.compute_initial_figure()
 
         FigureCanvas.__init__(self, fig)
@@ -75,7 +77,7 @@ class MyStaticMplCanvas(MyMplCanvas):
     def plot_new_data(self):
         self.axes.cla()
         self.axes.plot(self.t, self.s, color='purple', linewidth=0.5)
-        self.axes.invert_yaxis()
+        #self.axes.invert_yaxis()
         try: xmin=min(self.t[-port_chart_lim:]) if len(self.t) >= port_chart_lim else min(self.t)
         except Exception as ex:
             print('Error occured: ', ex)

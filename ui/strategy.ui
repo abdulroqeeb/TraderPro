@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>902</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>778</width>
+    <height>902</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>778</width>
+    <height>902</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>View Strategy</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ui_assets/resources.qrc">
+    <normaloff>:/icons/order.png</normaloff>:/icons/order.png</iconset>
+  </property>
+  <widget class="QWidget" name="widget_8" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>285</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="status">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Unlimited</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>9</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_7" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>225</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Long Window</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="long_window">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed">0000</string>
+    </property>
+    <property name="text">
+     <string>300</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>105</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Order Size</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="order_size">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed">0000</string>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>781</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);</string>
+   </property>
+   <widget class="QPushButton" name="stop">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>15</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-image: url(:/stripes/bg/stripes-light.png);
+	color: rgb(0, 0, 0);
+	border-radius: 15px;
+border-width: 2px;
+border-style: solid;
+	border-color: rgb(255, 0, 0);;
+}</string>
+    </property>
+    <property name="text">
+     <string>Remove Strategy</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ui_assets/resources.qrc">
+      <normaloff>:/icons/order.png</normaloff>:/icons/order.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>481</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>&lt;Strategy Name&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="halt">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>15</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-image: url(:/stripes/bg/stripes-light.png);
+	color: rgb(0, 0, 0);
+	border-radius: 15px;
+border-width: 2px;
+border-style: solid;
+	border-color: rgb(255, 0, 0);;
+}</string>
+    </property>
+    <property name="text">
+     <string>Halt Strategy</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ui_assets/resources.qrc">
+      <normaloff>:/icons/order.png</normaloff>:/icons/order.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_6" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>165</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Short Window</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="short_window">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed">0000</string>
+    </property>
+    <property name="text">
+     <string>50</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_9" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>525</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Positives</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="positives_disp">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_10" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>405</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Trade Count</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="t_count">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_11" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>465</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>PnL</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pnl">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>345</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>State</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="state">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>585</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Avg. Returns</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="avg_ret">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_12" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>645</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Vol</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="volatility">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_13" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>765</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Sortino Ratio</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sortino">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_14" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>705</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Sharpe Ratio</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sharpe">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string extracomment="Only numbers are allowed"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="strategy_plot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>511</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>260</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="distribution_plot_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>360</y>
+     <width>511</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>260</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="roll_vol_plot_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>630</y>
+     <width>511</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>260</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_15" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>825</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(214, 214, 214);
+border-radius: 25px;
+color: rgb(72, 61, 65);</string>
+   </property>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>16</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="text">
+     <string>Running Time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="time">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/stripes/bg/stripes-light.png);
+border-radius: 15px;
+color: rgb(72, 61, 65);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhPreferNumbers|Qt::ImhPreferUppercase</set>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ui_assets/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

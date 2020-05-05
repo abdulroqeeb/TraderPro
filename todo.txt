@@ -1,0 +1,6 @@
+1. Implement bid-ask midpoint price
+2. Implement strategy view
+3. Implement new strategy
+4. Include option for futures contract
+5. Save live algorithms and prices
+6. Clean exit

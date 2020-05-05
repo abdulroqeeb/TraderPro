@@ -143,6 +143,11 @@ border-style: solid;
     </item>
     <item>
      <property name="text">
+      <string>Let's Gamble</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>Pair Spread</string>
      </property>
     </item>

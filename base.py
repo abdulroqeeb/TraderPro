@@ -23,7 +23,9 @@ from tproconfig import host, port, ticktypes, account_details_params
 from prices import Prices
 from strategy import MovingAverageCrossStrategy
 import datetime
-
+import pickle
+import time
+import copy
 
 
 
@@ -59,6 +61,62 @@ class TraderPro(wrapper.EWrapper, client.EClient):
         self.portfolio_value_hist = {}
         self.req_to_strategy = {}
         self.strategies = {}
+        
+     
+        
+    def save_strategies(self):
+        data = {}
+        for key in self.strategies.keys():
+            print('Halting: ', type(self.strategies.get(key)))
+            try:
+                strat = self.strategies.get(key)
+                if strat:
+                    
+                    strat.live = False
+                    strat.broker = None
+                    self.strategies[key] = strat
+                    
+                    
+                    # dat = {}
+                    # dat['symbol'] = strat.symbol 
+                    # dat['short_window'] = strat.short_window
+                    # dat['long_window'] = strat.long_window
+                    # dat['position'] = strat.position
+                    # dat['pnl'] = strat.pnl
+                    # dat['cost'] = strat.cost
+                    # dat['trades'] = strat.trades
+                    # dat['order_size'] = strat.order_size
+                    # dat['live'] = strat.live
+                    # dat['name'] = strat.name
+                    # dat['strategy_type'] = strat.strategy_type
+                    # data[key] = dat
+                    
+            except: pass 
+            
+        with open('strategies.pk', 'wb') as file:
+            print(type(data))
+            print('Saving: ', data)
+            pickle.dump(self.strategies, file)
+            self.prices_history.save_price_history()
+            
+            
+    def load_strategies(self):
+        try:
+            with open('strategies.pk', 'rb') as file:
+                self.strategies = pickle.load(file)
+                for key, strategy in self.strategies.items():
+                    strategy.live = True
+                    strategy.broker = self
+                    _thread = threading.Thread(target = strategy.run_strategy)
+                    _thread.start()
+                    self.strategies[key] = strategy
+                    self.window.update_live_strategies_view()
+            print('Existing strategies loaded: ', self.strategies)
+            
+        except Exception as ex:
+            print('Error loading existing strategies: ', ex)
+            self.strategies = {}
+        
     
     @utils.iswrapper
     # ! [nextvalidid]
@@ -412,6 +470,10 @@ class TraderPro(wrapper.EWrapper, client.EClient):
         contract = my_utils.get_USD_stock_contract(ticker)
         self.reqContractDetails(self.nextValidOrderId, contract)
 
+
+
+def do_at_exit():
+    print('Exiting now')
 
 
 

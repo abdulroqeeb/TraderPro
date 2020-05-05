@@ -831,7 +831,7 @@ margin-top: 0px; /* make non-selected tabs look smaller */
 }</string>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="charts">
       <attribute name="title">
@@ -1512,7 +1512,7 @@ QTableWidget {
        </column>
        <column>
         <property name="text">
-         <string>Action</string>
+         <string>Status</string>
         </property>
         <property name="textAlignment">
          <set>AlignCenter</set>

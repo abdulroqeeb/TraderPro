@@ -39,3 +39,8 @@ account_details_params = [
 
 
 port_chart_lim = 600 #minutes
+
+
+states = {1: 'Long',
+          0: 'Flat',
+          -1: 'Short'}
